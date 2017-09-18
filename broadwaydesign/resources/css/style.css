@@ -12,6 +12,7 @@ body {
 #home h1 {
   font-size: 70px;
   font-weight: bold;
+  color: white;
 }
 
 #process h2 {
@@ -19,12 +20,12 @@ body {
   font-weight: bold;
 }
 
-h3 {
+#process h3 {
   font-size: 23px;
   font-weight: bold;
 }
 
-p {
+#process p {
   font-size: 14px;
 }
 
