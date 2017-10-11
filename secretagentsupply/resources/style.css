@@ -70,6 +70,10 @@ div {
   background-color: firebrick;
 }
 
+.menu {
+  display: none;
+}
+
 .navlink {
   display: flex;
   color: white;
@@ -147,4 +151,20 @@ footer {
   display: flex;
   height: 5rem;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mainnav {
+    display: none;
+  }
+
+  .menu {
+    display: initial;
+  }
+
+
 }
