@@ -5,7 +5,7 @@ html {
 }
 
 div {
-  border: 1px solid white;
+  border: 0.5px solid white;
 }
 /*Top Logo Bar*/
 .logobar {
@@ -68,18 +68,21 @@ div {
 /*Main Nav Bar*/
 .mainnav {
   background-color: firebrick;
-}
-
-.menu {
-  display: none;
+  color: white;
+  text-align: center;
+  padding: 0.75rem 0rem;
 }
 
 .navlink {
   display: flex;
   color: white;
   justify-content: space-between;
-  padding: 0.75rem 0rem;
 }
+
+.mobilenav {
+  display: none;
+}
+
 
 /*Product Divs*/
 .products {
@@ -158,13 +161,40 @@ footer {
     font-size: 16px;
   }
 
-  .mainnav {
+  .product {
+    width: 47%;
+  }
+
+  #info {
+    width: 35%;
+  }
+
+  .navlink {
     display: none;
   }
 
-  .menu {
-    display: initial;
+  .mobilenav {
+    display: block;
+    text-align: center;
   }
 
+  #glasses {
+    display: none;
+  }
+  }
 
-}
+  @media only screen and (max-width: 470px) {
+    .headline {
+      padding-top: 1rem;
+      padding-left: 2rem;
+    }
+
+    .product {
+      width: 90%;
+    }
+
+    #watch {
+      display: none;
+    }
+
+  }
