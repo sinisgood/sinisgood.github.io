@@ -1,0 +1,148 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*Header image and Navigation*/
+header {
+  background-image: url(../images/glasses-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+
+nav {
+  background-color: cadetblue;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logocontainer {  /*left side of nav bar*/
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 2rem;
+  flex-wrap: nowrap;
+}
+
+.logocontainer img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.menu {
+  display: none;
+}
+
+.navigation span {
+  margin-right: 2rem;
+}
+/*Headline Box*/
+.headline {
+  margin-top: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: -2rem;
+}
+
+.headline h1 {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  text-align: center;
+}
+/*main information*/
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0rem;
+  height: 8rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#rulerbox {
+  margin: 0rem 6rem;
+}
+
+#paper {
+  width: 3.5rem;
+  height: auto;
+}
+
+#ruler, #truck {
+  width: 5rem;
+  height: auto;
+}
+/*Information Panel*/
+.information {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 5rem;
+}
+
+.information h6 {
+  background-color: cadetblue;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  font-weight: bold;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.info {
+  width: 35%;
+}
+/*footer info*/
+footer {
+  background-color: azure;
+  padding: 4rem 0 4rem 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.footer {
+  padding: 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    height: 22rem;
+  }
+
+  .headline {
+    margin: 5rem 2rem 0 0;
+  }
+
+  .headline h1 {
+    font-size: 1.33rem;
+    padding: 1rem 4rem;
+  }
+
+}
