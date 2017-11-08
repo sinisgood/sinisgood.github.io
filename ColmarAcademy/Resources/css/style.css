@@ -1,0 +1,310 @@
+html {
+  font-size: 16px;
+  font-family: helvetica;
+  margin: 0 auto;
+  width: 100%;
+  color: dimgrey;
+}
+/*Top Navigation Bar*/
+.desktopnav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  margin-right: 1.5rem;
+  flex-flow: row nowrap;
+  font-size: 1.25rem;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.logo img {
+  margin-right: 0.25rem;
+  height: 2.5rem;
+  width: auto;
+}
+
+#academy {
+  color: dimgrey;
+  font-weight: lighter;
+}
+
+#nav {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+/*mobile navigation for mobile*/
+.mobilenav {
+  display: none;
+}
+/*main information*/
+.maininfo {
+  background-color: lightgray;
+  display: flex;
+  flex-flow: row nowrap;
+  color: dimgrey;
+}
+/*banner image*/
+.imgcntnr {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.imgcntnr img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+/*banner information and button*/
+.infocntnr {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 100%;
+  margin: 6.25rem 0;
+}
+
+.infoheader h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.infocntnr p {
+  font-size: 1.25rem;
+}
+
+.headerp {
+  margin: 1.25rem 0;
+}
+
+.startbutton {
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0 6.25rem;
+  color: white;
+  background-color: dimgrey;
+}
+/*Secondary Information*/
+.leftside, .secondaryleft {
+  width: 60%;
+  height: auto;
+}
+
+.rightside, .secondaryright {
+  width: 40%;
+  height: auto;
+}
+/*Left Side information*/
+.secondaryinfo {
+  display: flex;
+}
+
+.secondaryimg {
+  margin: 1.5rem 2rem;
+  overflow: hidden;
+}
+
+.secondaryimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.secondaryimg video {
+  max-width: 100%;
+  height: auto;
+}
+
+.leftsideinfo {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.leftsideinfo h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+}
+
+.leftside p {
+  font-size: .95rem;
+  padding-bottom: 1.5rem;
+  font-weight: lighter;
+}
+/*Right Side nformation panels*/
+.classimg {
+  width: 35%;
+  margin: 1rem;
+}
+
+.classtheme {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 1px solid lightgrey;
+  margin-bottom: 1px;
+}
+
+.classtheme img {
+  width: 100%;
+  height: auto;
+}
+
+.classinformation {
+  width: 65%;
+  text-align: left;
+}
+
+.classinformation h1 {
+  font-size: 1.3rem;
+}
+
+.classinformation p {
+  font-size: 1rem;
+  margin: 0.625rem 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+#mobile {
+  display: none;
+}
+/*Class Presentation*/
+.mobilecourse {
+  display: none;
+}
+.courses {
+  background-color: gainsboro;
+}
+
+#startlearning, #thesis {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.courseinformation {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+/*Individual Courses*/
+.course {
+  max-width: 25%;
+  height: auto;
+  background-color: white;
+  margin: 1rem;
+}
+
+.course img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.courseinfo {
+  margin: 1rem;
+  font-weight: lighter;
+}
+
+.course h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.course p {
+  margin: 0.5rem 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 2rem 1.5rem;
+}
+
+footer span {
+  margin: 0 .5rem;
+}
+/*Media Queries*/
+/*For screens 600px or smaller*/
+@media only screen and (max-width: 600px) {
+  .desktopnav, .secondaryleft, #regular, .courses, .fourthrightcolumn, #finalinformation, .footernav {
+    display: none;
+  }
+
+  #mobile, .mobilecourse {
+    display: initial;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .classimg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mobilenav {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+  }
+
+  .maininfo, .classtheme {
+    flex-flow: column;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .leftside, .rightside, .secondaryright, .classimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .imgcntnr {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .infocntnr {
+    margin: 2rem 1rem;
+  }
+
+  .mobilecourse li {
+    background-color: gainsboro;
+    width: 100%;
+    margin: 1rem 0.5rem;
+    font-size: 2rem;
+    padding: 1rem 0rem 1.5rem 1rem;
+    text-align: left;
+  }
+
+  .mobilecourse ul {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
